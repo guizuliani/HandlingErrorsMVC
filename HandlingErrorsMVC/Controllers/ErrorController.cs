@@ -13,8 +13,6 @@ namespace HandlingErrorsMVC.Controllers
 
         public ActionResult NotFound()
         {
-            Response.StatusCode = (int)HttpStatusCode.NotFound;
-
             return View();
         }
 
