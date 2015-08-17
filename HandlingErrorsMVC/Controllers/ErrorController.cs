@@ -8,8 +8,6 @@ namespace HandlingErrorsMVC.Controllers
 
         public ActionResult Generic()
         {
-            Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-
             return View();
         }
 
