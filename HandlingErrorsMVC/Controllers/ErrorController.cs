@@ -6,7 +6,7 @@ namespace HandlingErrorsMVC.Controllers
     public class ErrorController : Controller
     {
 
-        public ActionResult Generic()
+        public ActionResult General()
         {
             return View();
         }
