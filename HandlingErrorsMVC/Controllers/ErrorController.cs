@@ -11,23 +11,16 @@ namespace HandlingErrorsMVC.Controllers
 
         }
 
-        public ActionResult Forbidden()
-        {
-            Response.StatusCode = (int)HttpStatusCode.Forbidden;
-
-            return View();
-        }
-
-        public ActionResult NotFound()
-        {
-            Response.StatusCode = (int)HttpStatusCode.NotFound;
-
-            return View();
-        }
-
-        public ActionResult InternalServerError()
+        public ActionResult Generic()
         {
             Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+            return View();
+        }
+
+        public ActionResult NotFound(string aspxErrorPath)
+        {
+            Response.StatusCode = (int)HttpStatusCode.NotFound;
 
             return View();
         }

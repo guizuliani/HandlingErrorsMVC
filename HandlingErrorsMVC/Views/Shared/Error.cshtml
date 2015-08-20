@@ -1,0 +1,32 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <div>
+        <h1>Error</h1>
+
+        @if (Request.IsLocal)
+        {
+            <div>
+                Controller Name: @Model.ControllerName
+            </div>
+            <div>
+                Action Name: @Model.ActionName
+            </div>
+            <div>
+                Exception Message: @Model.Exception.Message
+            </div>
+        }
+    </div>
+</body>
+</html>
